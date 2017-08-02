@@ -2,3 +2,4 @@ Flask-Socketio==2.9.1
 Flask==0.12.2
 gevent==1.2.2
 gevent-websocket==0.10.1
+gunicorn==19.7.1
