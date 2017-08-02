@@ -56,23 +56,35 @@ box-sizing: border-box
 }
 
 .one {
-background: #dddddd;
+/*background: #dddddd;*/
+background-image: url(/static/img/1c.png);
+background-size: 100% 100%;
 }
 .two {
-background: #cccccc;
+/*background: #cccccc;*/
+background-image: url(/static/img/2c.png);
+background-size: 100% 100%;
 }
 .three {
-background: #bbbbbb;
+/*background: #bbbbbb;*/
+background-image: url(/static/img/3c.png);
+background-size: 100% 100%;
 }
 
 .four {
-background: #aaaaaa;
+/*background: #aaaaaa;*/
+background-image: url(/static/img/4c.png);
+background-size: 100% 100%;
 }
 
 .five {
-background: #999999;
+/*background: #999999;*/
+background-image: url(/static/img/5c.png);
+background-size: 100% 100%;
 }
 
 .six {
-background: #888888;
+/*background: #888888;*/
+background-image: url(/static/img/6c.png);
+background-size: 100% 100%;
 }
