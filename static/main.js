@@ -1,4 +1,5 @@
-var socket = io.connect("http://localhost:5000");
+//var socket = io.connect("http://localhost:5000");
+var socket = io.connect("https://");
 socket.on('connect', function () {
     socket.emit('echo', {data: 'Im connected!'});
 })
