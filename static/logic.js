@@ -146,6 +146,11 @@ function scoreMiddle(x) {
     box.textContent = x.toString();
 }
 
+function scoreOther(x) {
+    box = document.getElementById("score other");
+    box.textContent = x.toString();
+}
+
 function randomCard() {
     x = Math.floor(Math.random() * 6);
     addCard(x);
@@ -184,8 +189,8 @@ function updateState(gameState) {
     gameState.otherBoard.forEach(function(c) {
         addToElement(c,'board_other');
     });
-    console.log(gameState);
     if (gameState.gameOver) {
+        scoreOther(gameState.otherScore)
         gameState.otherHandCards.forEach(function (c) {
             addOther(c);
         });

@@ -136,6 +136,7 @@ def gameStateToJSON(state, player=0):
     result['gameOver'] = state.winner != None
     if state.winner != None:
         result['otherHandCards'] = state.players[other(player)].hand
+        result['otherScore'] = state.players[other(player)].score
     return result
 
 if __name__ == '__main__':
