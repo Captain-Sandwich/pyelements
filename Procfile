@@ -1,1 +1,1 @@
-web: gunicorn gameserver:app
+web: gunicorn gameserver:app --workers 1
