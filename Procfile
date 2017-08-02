@@ -1,1 +1,1 @@
-web: gunicorn gameserver --log-file -
+web: gunicorn gameserver:app
