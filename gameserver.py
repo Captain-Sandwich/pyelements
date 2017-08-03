@@ -16,6 +16,24 @@ loghandler = RotatingFileHandler('elements.log')
 loghandler.setLevel(logging.INFO)
 app.logger.addHandler(loghandler)
 
+def cleanupDatabase():
+    now = floor(time.time())
+    pops = []
+    for k,v in games:
+        if now - v.created > 2*3600: # game older than 2 hours
+            pops.append(k)
+
+    # now do the cleanup
+    for k in pops:
+        try:
+            invites.pop(k)
+        except:
+            pass
+        try:
+            games.pop(k)
+        except:
+            pass
+
 def newID():
     u = uuid.uuid4()
 #    u = base64.urlsafe_b64encode(u.bytes)
